@@ -1,0 +1,165 @@
+/* Here would be global CSS */
+
+:root{
+    /* custom variabel */
+    --blue_primary:#1D4ED8;
+    --secondary:#A0A3BD;
+    --importan: #D00707;
+    --active: #00BA88;
+    --title_info: #4E4B66;
+    --title_info_2: #AAAAAA;
+    --background: #F5F6F8;
+    --label: #6E7191;
+
+}
+
+/* import google font : Mulish */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* Universal CSS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+
+/* CSS content for header */
+header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background);
+  box-shadow: 3px 3px 29px var(--title_info_2);
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+  z-index: 100;
+}
+header img {
+  height: 51px;
+  width: 130px;
+}
+header div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+header div button:nth-child(1){
+  background-color: var(--background);
+  color: var(--blue_primary);
+  border: 2px solid var(--blue_primary);
+  border-radius: 4px;
+  height: 45px;
+  width: 80px;
+}
+header div button:nth-child(2){
+  background-color: var(--blue_primary);
+  color: var(--background);
+  border: 2px solid var(--blue_primary);
+  border-radius: 4px;
+  height: 45px;
+  width: 80px;
+}
+/* CSS content for header */
+
+
+
+/* CSS main section  */
+/* section Hero */
+
+/* CSS main section  */
+
+
+
+
+/* CSS content for footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  height: fit-content;
+  
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+.footer div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer div:nth-child(1) img{
+  height: 70px;
+  width: 180px;
+}
+.footer div:nth-child(1) p{
+  white-space: wrap;
+  width: 280px;
+  font-weight: 400;
+  color: var(--secondary);
+  
+}
+.footer div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 200px;
+}
+.footer div:nth-child(2) div{
+  margin: 10px;
+  color: var(--label);
+}
+
+.footer div:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+.footer div:nth-child(3) div{
+  align-items: start;
+  margin: 10px 0 10px 0;
+} 
+.footer div:nth-child(3) div img{
+  height: 35px;
+}
+.footer div:nth-child(4){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--label);
+}
+.footer div:nth-child(4) div{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 10px 0 10px 0;
+  gap: 10px;
+}
+.footer div:nth-child(4) div img{
+  height: 24px;
+  width: 24px;
+}
+.footer div div h3{
+  color: black;
+  text-decoration: none;
+}
+footer div:nth-child(2) p {
+  font-weight: 400;
+  color: var(--secondary);
+  text-align: center;
+  margin: 30px;
+}

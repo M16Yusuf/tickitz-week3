@@ -1,0 +1,113 @@
+/* import global CSS */
+@import url("../global.css");
+
+
+/* fist section as hero  */
+/* container flex class hero */
+section.hero{
+    /* position: relative; */
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    background-color: var(--background);
+    height: fit-content;
+    justify-content: center;
+    padding: 70px 0 70px 0;
+}
+/* text section hero */
+div.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    width: 580px;
+}
+div.hero-text p:nth-child(1){
+    color: var(--blue_primary);
+    font-weight: 700;
+}
+div.hero-text h1{
+    color: black;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 48px;
+    margin: 10px 0 10px 0;
+}
+div.hero-text p:nth-child(3){
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+/* image displas class */
+div.hero-grid{
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c b"
+        "c d";
+    gap: 10px;
+    /* height: fit-content; */
+}
+div.hero-grid div:nth-child(1){
+    /* first item */
+    grid-area: a;
+    margin: 0;
+}
+div.hero-grid div:nth-child(2) {
+    /* second item */
+    grid-area: b;
+    margin: 0;
+}
+div.hero-grid div:nth-child(3) {
+    /* third item */
+    grid-area: c;
+    margin: 0;
+}
+div.hero-grid div:nth-child(4) {
+    /* four item */
+    grid-area: d;
+    margin: 0;
+}
+
+
+/* section Hero */
+section.service {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 5px 150px 5px 150px;
+    margin: 30px 0 30px 0;
+}
+section.service h3{
+    color: var(--blue_primary);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+section.service h1 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 10px 0 20px 0;
+}
+div.content-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+div.content-service div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+div.content-service div img{
+    width: 50px;
+    height: 50px;
+}
+
+div.content-service div p{
+    color: var(--secondary);
+    text-align: justify;
+}

@@ -20,11 +20,13 @@ Requirements:
 
 5. Responsive
 
-6. Buat semirip mungkin sesuai figma
+6. navigasi halaman
 
-7. Upload ke github
+7. Buat semirip mungkin sesuai figma
 
-8. Deploy ke vercel
+8. Upload ke github
+
+9. Deploy ke vercel
 
 Penggunakan Bahasa Inggris untuk nama class atau id
 
