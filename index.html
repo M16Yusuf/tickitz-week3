@@ -9,18 +9,10 @@
     <link rel="icon" href="./img/icon/icon-tickitz.png" sizes="16x16">
     <!-- external css -->
     <!-- <link rel="stylesheet" href="./styles/pages/register-login.css"> -->
-     <link rel="stylesheet" href="./styles/pages/home.css">
+    <link rel="stylesheet" href="./styles/pages/home.css">
     <title>Home</title>
 </head>
 <body>
-    <!-- 
-    1. HTML5 Semantik
-    2. Grid/flexbox
-    3. ExternalCSS
-    4. Media query
-    5. Responsive
-    6. Buat semirip mungkin sesuai figma -->
-
     <!-- navigation bar -->
     <header>
         <!-- image -->
@@ -34,8 +26,8 @@
         </div>
 
         <div>
-            <button type="button">SignIn</button>
-            <button type="button">Sign Up</button>
+            <a href="./pages/login.html">SignIn</a>
+            <a href="./pages/register.html">Sign Up</a>
         </div>
 
     </header>
@@ -106,27 +98,113 @@
                     </p>
                 </div>
             </div>
-            
-
-
-
-
-
         </section>
+
+
 
         <!-- recomendation section -->
-        <section>
+        <section class="recommend">
+            <div> MOVIES </div>
+            <p> Exciting Movies That Should Be <br> Watched Today</p>
+            <div class="card-recommend">  
+                <div class="card-recommend-item">
+                    <img src="./img/content/black_widow.png" alt="black_widow">
+                    <h3> Black Widow </h3>
+                    <div>
+                        <a href="#genre"> Action </a> <a href="#genre"> Adventure </a>
+                    </div>
+                </div>
+                <div class="card-recommend-item">
+                    <img src="./img/content/the_wtiches.png" alt="the_wtiches">
+                    <h3>The Witches</h3>
+                    <div>
+                        <a href="#genre"> Comedy </a> <a href="#genre"> Adventure </a>
+                    </div>
+                </div>
+                <div class="card-recommend-item">
+                    <img src="./img/content/tenet.png" alt="tenet">
+                    <h3> Tenet </h3>
+                    <div>
+                        <a href="#genre"> Action </a> <a href="#genre"> Sci-fi</a>
+                    </div>
+                </div>
+                <div class="card-recommend-item">
+                    <img src="./img/content/spiderman_homecoming.png" alt="spiderman">
+                    <h3>Spiderman Home Coming</h3>
+                    <div>
+                        <a href="#genre"> Action </a> <a href="#genre"> Adventure </a>
+                    </div>
+                </div>
+            </div>
+            <div> <a href="#viewall">View All -></a> </div>
 
         </section>
 
+        
         <!-- coming soon sectio  -->
-        <section>
+        <section class="upcoming">
 
+            <div>
+                <div>
+                    <div> UPCOMING MOVIES </div>
+                    <div> Exciting Movie Coming Soon </div>
+                </div>
+                <div class="arrow">
+                    <a href="#right"> ← </a>
+                    <a href="#left"> → </a>
+                </div>
+            </div>
+
+
+            <div class="card-recommend">  
+                <div class="card-recommend-item">
+                    <img src="./img/content/black_widow.png" alt="black_widow">
+                    <h3> Black Widow </h3>
+                    <h5>December 20224</h5>
+
+                    <div>
+                        <a href="#genre"> Action </a> <a href="#genre"> Adventure </a>
+                    </div>
+                </div>
+                <div class="card-recommend-item">
+                    <img src="./img/content/the_wtiches.png" alt="the_wtiches">
+                    <h3>The Witches</h3>
+                    <h5>January 20224</h5>
+                    <div>
+                        <a href="#genre"> Comedy </a> <a href="#genre"> Adventure </a>
+                    </div>
+                </div>
+                <div class="card-recommend-item">
+                    <img src="./img/content/tenet.png" alt="tenet">
+                    <h3> Tenet </h3>
+                    <h5>June 20224</h5>
+                    <div>
+                        <a href="#genre"> Action </a> <a href="#genre"> Sci-fi</a>
+                    </div>
+                </div>
+                <div class="card-recommend-item">
+                    <img src="./img/content/spiderman_homecoming.png" alt="spiderman">
+                    <h3>Spiderman Home Coming</h3>
+                    <h5>March 20224</h5>
+                    <div>
+                        <a href="#genre"> Action </a> <a href="#genre"> Adventure </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
         <!-- subscribe section -->
-         <section>
+         <section class="subscribe">
+            
+            <img src="./img/background/bg_subscribe.png" alt="blus_bg">
+            <form action="#">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Email address">
+                <Button>Subscibe Now</Button>
+            </form>
+
+
 
          </section>
     </main>
