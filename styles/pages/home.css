@@ -6,11 +6,10 @@
 /* container flex class hero */
 section.hero{
     /* position: relative; */
-    top: 100px;
+    margin-top: 110px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 110px;
     background-color: var(--background);
     height: fit-content;
     justify-content: center;
