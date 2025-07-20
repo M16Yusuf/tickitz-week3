@@ -61,7 +61,7 @@ header div:nth-child(3){
   flex-direction: row;
   gap: 10px;
 }
-header div a:nth-child(1){
+header div:last-child a:nth-child(1){
   background-color: var(--background);
   color: var(--blue_primary);
   border: 2px solid var(--blue_primary);
@@ -76,7 +76,7 @@ header div a:nth-child(1){
   /* verticaly center */
   align-content: center;
 }
-header div a:nth-child(2){
+header div:last-child a:nth-child(2){
   background-color: var(--blue_primary);
   color: var(--background);
   border: 2px solid var(--blue_primary);

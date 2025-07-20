@@ -39,11 +39,10 @@
                     <input type="password" name="pass" placeholder="Enter your Passwod" id="pass">
                 </div>
                 <div class="login">
-                    <a href="">Forgot your password?</a>
+                    <a href="./register.html">Forgot your password?</a>
                 </div>
                 <div>
-                    <button type="submit"> Login </button>
-                    
+                    <button  type="submit" id="myButton" onclick="openWin()"> Login </button>
                 </div>
                 <div>
                     <!-- <a href="">Forgot your password?</a> -->
@@ -64,6 +63,11 @@
         </form>
     </section>
 
+    <script>
+        function openWin() {
+            window.open("./profile/account_seting.html");
+        }
+    </script>
     
 
 </body>
