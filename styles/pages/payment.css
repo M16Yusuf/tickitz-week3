@@ -1,0 +1,129 @@
+@import url("../global.css");
+
+main{
+    background-color: var(--label-genre);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* section status */
+section.status{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-self: center;
+}
+section.status > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+div.status-date div{
+    background-color: #008000;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+
+    color: var(--background);
+    text-align: center;
+    align-content: center;
+}
+div.status-seat div{
+    background-color: #008000;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+
+    color: var(--background);
+    text-align: center;
+    align-content: center;
+}
+div.status-payment div{
+    background-color: var(--blue_primary);
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+
+    color: var(--background);
+    text-align: center;
+    align-content: center;
+}
+div.status-item span{
+    font-weight: lighter;
+}
+
+
+
+/* section payment */
+section.payment{
+    background-color: white;
+    box-shadow: 5px 5px 10px var(--label-genre);
+    border-radius: 6px;
+    padding: 30px 5px 30px 5px;
+    max-width: 1000px;
+
+    margin-bottom: 40px;
+}
+
+div.payment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+div.payment-form div > label{
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: lighter;
+}
+div.payment-form div > input{
+    width: 671px;
+    height: 64px;
+    font-size: 16px;
+    font-weight: lighter;
+    
+    border: none;
+    border-bottom: 1px solid var(--secondary);
+}
+div.payment-form span{
+    font-size: 24px;
+    font-weight: 700;
+}
+div.pay-method{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 670px;
+    justify-content: center;
+}
+div.pay-method div{
+    border: 0.5px solid var(--secondary);
+    border-radius: 8px;
+    width: 146px;
+    height: 56px;
+    align-content: center;
+    text-align: center;
+}
+div.pay-method div > img{
+    width: 80px;
+    max-height: 37px;
+}
+
+div.payment-form a{
+    display: block;
+    max-width: 670px;
+    height: 56px;
+    background-color: var(--blue_primary);
+    color: var(--background);
+    border-radius: 4px;
+
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
+
