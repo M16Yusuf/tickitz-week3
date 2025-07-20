@@ -12,6 +12,8 @@
     --label: #6E7191;
     --label-genre: #A0A3BD1A;
     --label_input: #EFF0F6;
+    --bg_grid_item: #D6D8E7;
+    --bg_grid_pink: #F589D7;
 }
 
 /* import google font : Mulish */
@@ -35,7 +37,7 @@ header {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  background-color: var(--background);
+  background-color: white;
   box-shadow: 3px 3px 29px var(--title_info_2);
   align-items: center;
   height: 100px;  
@@ -214,7 +216,7 @@ section.subscribe > form > button{
 footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--background);
+  background-color: white;
   height: fit-content;
   
 }
