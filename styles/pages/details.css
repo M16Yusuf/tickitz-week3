@@ -1,0 +1,188 @@
+/* import global CSS */
+@import url("../global.css");
+
+section.jumbotron{
+    margin-top: 100px;
+    background: linear-gradient(rgb(0,0,0,0.4)), url(../../img/background/spiderman_face.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 450px;
+} 
+
+/* section description */
+section.description{
+    /* make this section flex container */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+}
+section.description img:nth-child(1){
+    height: 400px;
+    /* make position this section overlap jumbotron section */
+    position: absolute;
+    top: 350px;
+    left: 250px;
+}
+
+section.description div p{
+    max-width: 1000px;
+
+    color: var(--secondary);
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+div.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 20px;
+}
+
+div.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+div.details > div:first-child{
+    font-size: 32px;
+    font-weight: 700;
+}
+div.details a{
+    text-decoration: none;
+    background-color: var(--label-genre);
+    color: var(--secondary);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+div.details a:hover{
+    background-color: var(--blue_primary);
+    color: var(--background);
+}
+div.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+div.grid-container label{
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 14px;
+}
+div.grid-container span{
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+/* section book */
+section.book{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-self: center;
+    margin-bottom: 30px;
+}
+section.book > div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: end;
+}
+div.book-item input{
+    width: 250px;
+    height: 56px;
+    padding: 20px;
+
+    background-color: var(--label_input);
+    border: none;
+}
+div.book-item a{
+    text-decoration: none;
+    background-color: var(--blue_primary);
+    color: var(--background);
+    display: block;
+    width: 188px;
+    height: 56px;
+
+    align-content: center;
+    text-align: center;
+}
+
+
+
+/* section cinema */
+section.cinema{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* make it center */
+    width: max-content;
+    justify-self: center;
+}
+section.cinema div:first-child span:first-child{
+    font-weight: normal;
+    font-size: 20px;
+    margin: 10px 20px 0 0;
+}
+section.cinema div:first-child span:nth-child(2){
+    font-weight: bold;
+    color: var(--secondary);
+}
+div.cinema-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-self: center;
+}
+div.cinema-logo div{
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    width: 220px;
+    height: 135px;
+    align-content: center;
+    text-align: center;
+}
+div.cinema-logo div:nth-child(2){
+    background-color: var(--blue_primary);
+}
+section.cinema > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-self: center;
+    margin: 10px;
+}
+section.cinema > div:nth-child(3) div{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+}
+section.cinema > div:nth-child(3) div:first-child{
+    background-color: var(--blue_primary);
+    color: var(--background);
+}
+section.cinema div:last-child a{
+    background-color: var(--blue_primary);
+    color: var(--background);
+    display: block;
+    padding: 25px;
+
+    width: 188px;
+    text-align: center;
+    /* align-self: center; */
+    justify-self: center;
+    margin: 20px;
+}
