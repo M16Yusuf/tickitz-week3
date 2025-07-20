@@ -38,7 +38,7 @@ header {
   display: flex;
   flex-direction: row;
   background-color: white;
-  box-shadow: 3px 3px 29px var(--title_info_2);
+  box-shadow: 5px 5px 10px var(--label-genre);
   align-items: center;
   height: 100px;  
   max-width: 100vw;
