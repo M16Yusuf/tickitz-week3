@@ -1,0 +1,148 @@
+@import url("../global.css");
+
+main{
+    background-color: var(--label-genre);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+section.ticket-jumbotron{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/* jumbotron */
+div.jumbotron{
+    background: linear-gradient(rgb(0,0,0,0.7)), url(../../img/background/avenger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65%;
+    height: 900px;
+
+    align-content: center;
+    justify-items: center;
+}
+div.jumbotron div{
+    color: var(--background);
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    gap: 20px;
+}
+div.jumbotron div > img{
+    width: 276px;
+}
+div.jumbotron div > span:nth-child(2){
+    font-size: 45px;
+    font-weight: bold;
+}
+div.jumbotron div > p{
+    font-size: 24px;
+    font-weight: lighter;
+}
+div.jumbotron div > span:last-child{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+
+/* croper */
+.croper > div{
+    width: 32px;
+    height: 32px;
+    background-color: #ECEDF2;
+    border-radius: 50%;
+}
+.croper > div:nth-child(1){
+    position: relative;
+    top: 240px;
+    left: 130px;
+}
+.croper > div:nth-child(2){
+    position: relative;
+    top: 208px;
+    left: 425px;
+}
+
+/* croper */
+
+
+/* section ticket */
+div.ticket{
+    width: 35%;
+    align-items: center;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+} 
+div.ticket > div {
+    background-color: white;
+    width: 295px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+}
+div.ticket div > img{
+    width: 186px;
+    height: 186px;
+    margin: 30px;
+}
+div.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+
+    justify-self: center;
+}
+span.total-payment{
+    display: block;
+    width: 247px;
+    height: 48px;
+    border: 0.5px solid var(--secondary);
+    text-align: center;
+    align-content: center;
+
+    margin: 20px;
+}
+
+div.ticket > span:nth-child(2){
+    display: block;
+    background-color: var(--label-genre);
+    color: var(--blue_primary);
+    border: 2px solid var(--blue_primary);
+    border-radius: 6px;
+    height: 56px;
+    width: 340px;
+
+    text-align: center;
+    align-content: center;
+
+}
+div.ticket > span:last-child{
+    display: block;
+    background-color: var(--blue_primary);
+    color: var(--background);
+    border: 2px solid var(--blue_primary);
+    border-radius: 6px;
+    height: 56px;
+    width: 340px;
+
+    text-align: center;
+    align-content: center;
+
+}

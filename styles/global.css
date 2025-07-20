@@ -10,11 +10,12 @@
     --title_info_2: #AAAAAA;
     --background: #F5F6F8;
     --label: #6E7191;
-    --label-genre: #A0A3BD1A;
+    --label-genre: #A0A3BD33;
     --label_input: #EFF0F6;
     --bg_grid_item: #D6D8E7;
     --bg_grid_pink: #F589D7;
 }
+
 
 /* import google font : Mulish */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
