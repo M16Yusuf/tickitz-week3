@@ -10,26 +10,44 @@
     <!-- external css -->
     <!-- <link rel="stylesheet" href="./styles/pages/register-login.css"> -->
     <link rel="stylesheet" href="./styles/pages/home.css">
+    
+    <script src="./js/hamburger.js" defer></script>
+
     <title>Home</title>
 </head>
 <body>
+
     <!-- navigation bar -->
     <header>
-        <!-- image -->
-        <img src="./img/icon/blue_tickitz.svg" alt="logo blue Tickitz">
+        <!-- image branding -->
+        <nav>
+            <a href="./index.html"> <img src="./img/icon/blue_tickitz.svg" alt="logo blue Tickitz"></a>
+            
+            <ul class="menu">
+                <li> <a href="./index.html"> Home </a> </li>
+                <li> <a href="./pages/home2.html" >Movie</a> </li>
+                <li> <a href="#"> Buy Ticket </a> </li>
+                
+            </ul>
 
-        <!-- menu -->
-        <div>
-            <div> <a href="./index.html" style="text-decoration: none; color: black;"> Home </a> </div>
-            <div> <a href="./pages/home2.html" style="text-decoration: none; color: black;">Movie</a> </div>
-            <div> Buy Ticket </div>
-        </div>
+            <div class="special">
+                <a href="./pages/login.html">SignIn</a>
+                <a href="./pages/register.html">Sign Up</a>  
+            </div> 
 
-        <div>
-            <a href="./pages/login.html">SignIn</a>
+            <div>
+                <img class="img-burger" src="./img/icon/menu-hamburger.svg" alt="hamburger">
+            </div>
+        </nav>
+        
+        <div class="hamburger">
+            <span> X </span>
             <a href="./pages/register.html">Sign Up</a>
-        </div>
-
+            <a href="./pages/login.html">SignIn</a>
+            <a href="./index.html"> Home </a>
+            <a href="./pages/home2.html" >Movie</a> 
+            <a href="#"> Buy Ticket </a>   
+        </div>    
     </header>
 
 
