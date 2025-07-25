@@ -1,6 +1,7 @@
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (e)  =>{
+    e.preventDefault();
     const getDataEmail = form.querySelector("input#ele_mail");
     const getDatapass = form.querySelector("input#pass");
 
@@ -15,5 +16,6 @@ form.addEventListener("submit", (e)  =>{
         p.style.cssText =  "font-size: 0.75rem; margin: 2px; color:red";
         getDatapass.insertAdjacentElement("afterend", p);
         console.log("email or password not match");
+        // alert("email or password not match");
     }
 });
