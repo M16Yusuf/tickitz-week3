@@ -43,19 +43,25 @@ passInput.addEventListener("change", (er) => {
     }
     if(passW == " "){
         const p = document.createElement("p");
-        p.textContent = "❌ pThe assword cannot be empty";
+        p.textContent = "❌ The assword cannot be empty";
         p.style.cssText =  "font-size: 0.75rem; margin: 2px; color:red";
         passInput.insertAdjacentElement("afterend", p);
         console.log("cammot empty")
     }
-
 });
 
+
+
+// console.log(formin);
 form.addEventListener("submit", (e)  =>{
     e.preventDefault();
-    const form = document.querySelector("form");
-    const getEmail = form.querySelector("input#ele_mail");
-    const getPass = form.querySelector("input#pass");
-    console.log(`this email ${getEmail.textContent} this pass ${getPass.textContent}`);
+    const getDataEmail = form.querySelector("input#ele_mail");
+    const getDatapass = form.querySelector("input#pass");
+
+    // console.log(dataEmail, dataPass);
+    const getEmail = getDataEmail.value;
+    const getPass = getDatapass.value;
+
+    console.log(`this email ${getEmail} this pass ${getPass}`);
 });
 
