@@ -52,16 +52,6 @@ passInput.addEventListener("change", (er) => {
 
 
 
-// console.log(formin);
-form.addEventListener("submit", (e)  =>{
-    e.preventDefault();
-    const getDataEmail = form.querySelector("input#ele_mail");
-    const getDatapass = form.querySelector("input#pass");
 
-    // console.log(dataEmail, dataPass);
-    const getEmail = getDataEmail.value;
-    const getPass = getDatapass.value;
 
-    console.log(`this email ${getEmail} this pass ${getPass}`);
-});
 
