@@ -1,14 +1,17 @@
-const kontenBurger = document.querySelector("div.hamburger");
-const tombolBurger = document.querySelector("header nav div img.img-burger");
+const btnBurger = document.querySelector("div#btn-hamburger");
+const contenBurger = document.querySelector("div#content-hamburger");
 
-const tombolX = document.querySelector("div.hamburger :first-child");
+const btnX = document.querySelector("div#content-hamburger span");
 
-tombolBurger.addEventListener("click", () => {
-    kontenBurger.style.display = "block";   
-
+btnBurger.addEventListener("click", () => {
+    if(contenBurger.style.display == "none"){
+        contenBurger.style.display = "block";   
+    } else {
+        contenBurger.style.display = "none";
+    }
 });
 
 
-tombolX.addEventListener("click", ()=> {
-    kontenBurger.style.display = "none";
+btnX.addEventListener("click", ()=> {
+    contenBurger.style.display = "none";
 })
